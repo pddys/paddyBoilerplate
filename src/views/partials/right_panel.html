@@ -1,0 +1,29 @@
+<div class="c-right-panel">
+	<div class="c-network c-profile__section">
+		<h6>Tom is in your extended network</h6>
+	</div>
+	<div class="c-blog c-profile__section">
+		<p>Tom's latest blog entry [<a class="c-link">Subscribe to this blog</a>]</p>
+		{% for i in range(0, 5) -%}
+		<div class="c-blog__entry">Blog entry (<a class="c-link">View More</a>)</div>
+		{%- endfor %}
+		[<a class="c-link">View all blog entries</a>]
+	</div>
+	<div class="c-blurb c-profile__section">
+		<h5>Tom's Blurbs</h5>
+		<h6>About Me</h6>
+		<h6>Who I'd like to meet</h6>
+	</div>
+	<div class="c-friends c-profile__section">
+		<h5>Tom's Friend Space</h5>
+		<span>Tom has <span class="c-friends__number">124243523</span> friends</span>
+		<div class="c-friends__container">
+			{% for i in range(0, 16) -%}
+			<figure class="c-friend">
+				<figcaption>Name</figcaption>
+				<img src="https://source.unsplash.com/150x150/?face">
+			</figure>
+			{%- endfor %}
+		</div>
+	</div>
+</div>

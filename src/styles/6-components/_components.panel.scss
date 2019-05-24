@@ -1,0 +1,184 @@
+main {
+	display: flex;
+	flex-direction: column;
+	@include mq($from: mobile) {
+		flex-direction: row;
+	}
+}
+
+.c-profile__section {
+	margin-bottom: 12px;
+}
+
+//
+// Left Panel
+//
+
+.c-profile {
+	width: 100%;
+	@include mq($from: mobile) {
+		width: 40%;
+		max-width: 500px;
+	}
+}
+
+.c-profile__container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	@include mq($from: 400px) {
+		flex-direction: row;
+	}
+	@include mq($from: mobile) {
+		justify-content: flex-start;
+	}
+}
+
+.c-profile__pic {
+	img {
+		@include mq($from: 400px) {
+		max-height: 300px;
+		}
+		width: auto;
+		display: block;
+	}
+}
+
+.c-profile__info {
+	padding: 24px 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	div {
+		margin: 0 0 1.25em 0;
+	}
+}
+
+.c-profile__links {
+	border: 2px solid $blue;
+	margin-bottom: 12px;
+	h5 {
+		background: $blue;
+		color: $white;
+		margin: 0;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		li {
+			flex: 1 0 50%;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			color: blue;
+			font-size: 90%;
+		}
+	}
+}
+
+.c-profile__interests {
+	border: 2px solid $blue;
+	margin-bottom: 12px;
+	h5 {
+		background: $blue;
+		color: $white;
+		padding: 0;
+		margin: 0;
+	}
+	dt, dl {
+		margin: 0;
+		padding: 0;
+	}
+	dt {
+		background: lighten($blue, 10%);
+		margin-right: 2px;
+	}
+	dl {
+		background: $lightblue;	
+	}
+}
+
+.c-interest__section {
+	display: flex;
+	justify-content: space-between;
+	padding: 2px;
+	dt {
+		flex: 1 0 30%;
+		@include mq($from: tablet) {
+			flex: 1 0 40%;
+		}
+	}
+	dt, dl {
+		padding: 2px;
+	}
+}
+
+//
+// Right Panel
+//
+
+.c-right-panel {
+	width: 100%;
+	@include mq($from: mobile) {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.c-network {
+	border: 2px solid black;
+	display: flex;
+	align-content: center;
+	padding: 24px;
+	h6 {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+	}
+}
+.c-blog {
+	p {
+		font-weight: bold;
+	}
+}
+
+.c-blog__entry {
+	&:last-of-type {
+		margin: 0 0 1.25em 0;
+	}
+}
+
+.c-blurb {
+	color: orange;
+}
+.c-blurb, .c-friends {
+	h5 {
+		padding: 0 12px; 
+		color: darken(orange, 10%);
+		background: lighten(orange, 30%);
+	}
+}
+
+.c-friends__container {
+	display: flex;
+	justify-content: row;
+	flex-wrap: wrap;
+	.c-friend {
+		flex: 1 0 25%;
+		padding: 12px;
+		margin-bottom: 0;
+		figcaption {
+			text-align: center;
+			color: blue;
+			font-weight: bold;
+		}
+	}
+}
+
+.c-friends__number {
+	color: red;
+	font-weight: bold;
+}

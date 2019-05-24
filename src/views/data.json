@@ -27,7 +27,77 @@
       {
         "id": "about-index",
         "path": "/about",
-        "children": "<i>About</i>"
+        "children": "About"
+      },
+      {
+        "id": "browse",
+        "path": "/browse",
+        "children": "Browse"
+      },
+      {
+        "id": "search",
+        "path": "/search",
+        "children": "Search"
+      },
+      {
+        "id": "invite",
+        "path": "/invite",
+        "children": "Invite"
+      },
+      {
+        "id": "Film",
+        "path": "/film",
+        "children": "Film"
+      },
+      {
+        "id": "mail",
+        "path": "/mail",
+        "children": "Mail"
+      },
+      {
+        "id": "Blogs",
+        "path": "/blogs",
+        "children": "Blogs"
+      },
+      {
+        "id": "Favorites",
+        "path": "/Favorites",
+        "children": "Favorites"
+      },
+      {
+        "id": "Forum",
+        "path": "/Forum",
+        "children": "Forum"
+      },
+      {
+        "id": "Groups",
+        "path": "/Groups",
+        "children": "Groups"
+      },
+      {
+        "id": "Events",
+        "path": "/Events",
+        "children": "Events"
+      },
+      {
+        "id": "MySpace TV",
+        "path": "/MyspaceTV",
+        "children": "MySpace TV"
+      },
+      {
+        "id": "Music",
+        "path": "/Music",
+        "children": "Music"
+      },
+      {
+        "id": "Comedy",
+        "path": "/Comedy",
+        "children": "Comedy"
+      },
+      {
+        "id": "Classifieds",
+        "path": "/Classifieds",
+        "children": "Classifieds"
       }
     ]
   }

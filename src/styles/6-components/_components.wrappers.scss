@@ -11,3 +11,10 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.c-wrapper {
+	padding: 12px;
+	@include mq($from: tablet) {
+		padding: 24px;
+	}
+}

@@ -2,6 +2,11 @@
 
 {% block content %}
 
-  <main class="main" role="main">(home - content)</main>
+  <main class="main c-wrapper" role="main">
+
+	{% include 'partials/left_panel.html' %}
+	{% include 'partials/right_panel.html' %}
+
+  </main>
 
 {% endblock %}
